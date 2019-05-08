@@ -23,16 +23,9 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Test;
 
-public class TestAdd {
+public class TestExcel {
 	@Test
 	public void testAdd() throws IOException {
-		// 第一步创建workbook
-//		HSSFWorkbook wb = new HSSFWorkbook();
-		XSSFWorkbook wb = new XSSFWorkbook();
-		// 第二步创建sheet
-		XSSFSheet sheet = wb.createSheet("测试");
-//		HSSFSheet sheet = wb.createSheet("测试");
-
 		/**
 		 *  HSSF － 提供读写Microsoft Excel XLS格式档案的功能。
 			XSSF － 提供读写Microsoft Excel OOXML XLSX格式档案的功能。
@@ -43,6 +36,13 @@ public class TestAdd {
 			HPBF － 提供读Microsoft Publisher格式档案的功能。
 			HSMF － 提供读Microsoft Outlook格式档案的功能。
 		 */
+		// 第一步创建workbook
+//		HSSFWorkbook wb = new HSSFWorkbook();
+		XSSFWorkbook wb = new XSSFWorkbook();
+		// 第二步创建sheet
+		XSSFSheet sheet = wb.createSheet("测试");
+//		HSSFSheet sheet = wb.createSheet("测试");
+
 		
 		// 第三步创建行row:添加表头0行
 //		HSSFRow row = sheet.createRow(0);
